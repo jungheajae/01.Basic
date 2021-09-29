@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font-family: "poppins", sans-serif;
+  background-color: white;
+  border: none;
+}
+
+.button {
+  width: 705px;
+  height: 265px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancle,
+.confirm {
+  width: 160px;
+  height: 56px;
+  border-radius: 500px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+}
+
+.cancle {
+  background-color: #ff4949;
+  margin-right: 16px;
+  transition: box-shadow 250ms ease-out;
+}
+
+.cancle:hover {
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.confirm {
+  background-color: #13ce66;
+  transition: box-shadow 250ms ease-out;
+}
+
+.confirm:hover {
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}

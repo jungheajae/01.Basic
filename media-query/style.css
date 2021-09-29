@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing {
+  background-image: url("https://github.com/rohjs/bugless-101/blob/master/css-basic/media-query/templates/assets/img-bg.jpg?raw=true");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.landing-title {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.landing-title strong {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.landing-link {
+  line-height: 1;
+  color: #fff;
+}
+
+.banner-title a {
+  color: #1f2d3d;
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-title a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: #ffc82c;
+  font-size: 18px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px;
+}
+
+.landing-title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  text-align: right;
+}
+
+.landing-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 160px;
+  height: 52px;
+  border: 2px solid white;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    bottom: auto;
+    top: 0;
+  }
+  .landing-title {
+    margin-bottom: 32px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .landing {
+    align-items: center;
+  }
+  .landing-link {
+    font-size: 18px;
+    width: 180px;
+    height: 56px;
+  }
+}

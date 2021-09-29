@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: rgb(201, 201, 201);
+}
+
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* text */
+
+.plus-badge {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.4285714286;
+  color: white;
+}
+
+.property-type span {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+
+.property-rate strong {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151b26;
+}
+
+.property-rate span {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #151b26;
+}
+
+.property-detail {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #7d858f;
+}
+
+/* style */
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  padding: 24px;
+  background-color: white;
+  position: relative;
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-right: 24px;
+  background-image: url("./asset/img-house.jpeg");
+}
+
+.like-button {
+  cursor: pointer;
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./asset/icon-favorite.svg");
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 1px;
+  background-image: url("./asset/icon-star.svg");
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.plus-badge {
+  background-color: #92174d;
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-right: 4px;
+}
+
+.property-detail dd {
+  margin-bottom: 8px;
+}
+
+.property-detail span::after {
+  content: "・";
+  margin: 0 5px;
+}
+
+.property-detail span:last-child::after {
+  content: "";
+}

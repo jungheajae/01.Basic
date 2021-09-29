@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "poppins";
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #0066ff;
+  transition: background-color 2500ms cubic-bezier(0, 1.14, 1, -1.11),
+    font-size 1000ms ease-in;
+}
+
+.box.after {
+  background-color: tomato;
+  font-size: 30px;
+}

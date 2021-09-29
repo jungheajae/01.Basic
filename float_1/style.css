@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: rgb(192, 192, 192);
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+ul {
+  max-width: 540px;
+  list-style: none;
+  padding-left: 0;
+  background-color: white;
+  border-bottom: 1px solid #e5eaef;
+}
+
+ul::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+li {
+  float: left;
+  margin-right: 16px;
+}
+
+a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.email {
+  color: #2860e1;
+  border-bottom: 2px solid #2860e1;
+}

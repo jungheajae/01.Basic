@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(204, 204, 204);
+}
+
+.loading {
+  padding: 80px 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 12px;
+  background-color: #e5eaef;
+  border-radius: 100px;
+  position: relative;
+}
+
+.loading-bar::after {
+  content: "";
+  width: 0;
+  height: 12px;
+  position: absolute;
+  background-color: #13ce66;
+  border-radius: 100px;
+  left: 0;
+  bottom: 0;
+  animation-name: loadingbar;
+  animation-duration: 2500ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+strong {
+  display: block;
+  margin-bottom: 20px;
+  animation-name: letter;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes loadingbar {
+  0% {
+    width: 0;
+    background-color: #13ce66;
+  }
+
+  80% {
+    width: 100%;
+    background-color: #13ce66;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes letter {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

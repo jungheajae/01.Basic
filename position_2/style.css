@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: black;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1f2d3d;
+  line-height: 1.4545454545;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7d858f;
+  line-height: 1.5;
+}
+
+strong {
+  font-size: 22px;
+  color: #2860e1;
+  line-height: 1.0909090909;
+}
+
+strong span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525d69;
+  line-height: 1.5;
+}
+
+button {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#prev {
+  background-image: url(https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-backward.svg);
+}
+
+#next {
+  background-image: url(https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-forward.svg);
+}
+
+.card {
+  width: 400px;
+}
+
+.card-carousel {
+  position: relative;
+}
+
+.card-carousel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.card-content {
+  padding: 12px 16px;
+  background-color: white;
+}
+
+.card-content h1 {
+  margin-bottom: 2px;
+}
+
+.card-content > span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-content > strong {
+  display: block;
+  text-align: right;
+}
+
+.card-content > strong > span {
+  margin-right: 4px;
+}
