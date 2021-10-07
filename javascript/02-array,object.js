@@ -22,7 +22,7 @@ console.log(player);
 console.log(player.name);
 
 player.lastname = "jung";
-player.slim = "false";
+player.slim = false;
 player.age = player.age + 10;
 console.log(player);
 
